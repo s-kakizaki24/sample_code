@@ -12,7 +12,7 @@ async function getPrefs() {
 }
 
 async function getCities(cityCode) {
-  const cityResponse = await fetch(`./cities/${cityCode}.json`);
+  const cityResponse = await fetch(`./sample/cities/${cityCode}.json`);
   return await cityResponse.json();
 }
 
