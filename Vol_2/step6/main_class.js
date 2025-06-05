@@ -17,7 +17,7 @@ class AreaSelector {
   }
 
   async getCities(prefCode) {
-    const cityResponse = await fetch(`./cities/${prefCode}.json`);
+    const cityResponse = await fetch(`./sample/cities/${prefCode}.json`);
     return await cityResponse.json();
   }
 
